@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{492A217E-071C-449B-9D7B-B2C96CABA25B}</ProjectGuid>
+    <ProjectGuid>{260C9E8A-6C79-4B58-B7C3-D9C9C7A4AB00}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HotDogLover.Tests</RootNamespace>
@@ -93,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HotDogLover\HotDogLover.csproj">
-      <Project>{11F8E8F2-9B3F-48D2-B9F2-1C0556681E55}</Project>
+      <Project>{6D8981D3-3E5B-4AD5-ACBD-91A1DED62570}</Project>
       <Name>HotDogLover</Name>
     </ProjectReference>
   </ItemGroup>

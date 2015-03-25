@@ -29,5 +29,7 @@ namespace HotDogLover.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<HotDogLover.Models.Hotdog> Hotdogs { get; set; }
     }
 }
