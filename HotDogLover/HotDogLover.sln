@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotDogLover", "HotDogLover\HotDogLover.csproj", "{11F8E8F2-9B3F-48D2-B9F2-1C0556681E55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotDogLover.Tests", "HotDogLover.Tests\HotDogLover.Tests.csproj", "{492A217E-071C-449B-9D7B-B2C96CABA25B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11F8E8F2-9B3F-48D2-B9F2-1C0556681E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F8E8F2-9B3F-48D2-B9F2-1C0556681E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F8E8F2-9B3F-48D2-B9F2-1C0556681E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F8E8F2-9B3F-48D2-B9F2-1C0556681E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{492A217E-071C-449B-9D7B-B2C96CABA25B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{492A217E-071C-449B-9D7B-B2C96CABA25B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{492A217E-071C-449B-9D7B-B2C96CABA25B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{492A217E-071C-449B-9D7B-B2C96CABA25B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
