@@ -24,17 +24,8 @@ namespace HotDogLover.Models
         public string ImageUrl { get; set; }
 
         [Display(Name = "Favorite Dog")]
-        public string FavoriteDog { get; set; }
+        public Hotdogs FavoriteDog { get; set; }
 
-        [Display(Name = "Location Last Eaten")]
-        public string LastAte { get; set; }
-
-        [Display(Name = "Date Last Eaten")]
-        [DataType(DataType.Date)]
-        public DateTime DateEaten { get; set; }
-
-        [Display(Name = "Rating (1-5)")]
-        [Range(1, 5)]
-        public int Rating { get; set; }
+        public List<Hotdogs> HotdogList { get; set; }
     }
 }

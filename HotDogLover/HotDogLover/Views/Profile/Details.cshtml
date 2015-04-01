@@ -1,82 +1,46 @@
 ﻿@model HotDogLover.Models.Profile
-
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Profile Details";
 }
 
-<h2>Details</h2>
-
-<div>
-    <h4>Profile</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.FirstName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.FirstName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.LastName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Bio)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Bio)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ImageUrl)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ImageUrl)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.FavoriteDog)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.FavoriteDog)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.LastAte)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.LastAte)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DateEaten)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DateEaten)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Rating)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Rating)
-        </dd>
-
-    </dl>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6"><h1>Hot Dog Lover Profile</h1>@Html.ActionLink("Edit", "Edit", "Profile", new { id = Model.Id }, new { @class = "glyphicon glyphicon-pencil" })</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div><img src="@Url.Content(Model.ImageUrl)" alt="Profile Pic" class="profile" /></div>
+            <ul class="profile-detail-items">
+                <li><span>Favorite Dog:</span> @Model.FavoriteDog.Name</li>
+                <li><span>Last Place Ate:</span> @Model.FavoriteDog.LastEaten</li>
+                <li><span>Last Time Ate:</span> @Model.FavoriteDog.LastAte</li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <h2>@Model.FirstName @Model.LastName</h2>
+            <p>
+                @Model.Bio
+            </p>
+            <div class="dog-list">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Past Hotdogs @Html.ActionLink("Add", "CreateHotdog", "Profile", new { id = Model.Id }, new { @class = "glyphicon glyphicon-pencil" })</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            @foreach (var hotdogs in Model.HotdogList)
+                            {
+                                <li>@hotdogs.Name   @hotdogs.LastAte   @hotdogs.LastEaten</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">@Html.ActionLink("Back", "Index", "Profile")</div>
+            </div>
+        </div>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

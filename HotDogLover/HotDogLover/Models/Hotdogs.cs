@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Web;
+using System.Text;
 
 namespace HotDogLover.Models
 {
-    public class Hotdog
+    public class Hotdogs
     {
         [Display(Name = "Hotdog Number")]
         public int Id { get; set; }
