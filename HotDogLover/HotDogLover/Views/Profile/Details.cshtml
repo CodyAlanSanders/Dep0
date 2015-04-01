@@ -14,6 +14,14 @@
                 <li><span>Favorite Dog:</span> @Model.FavoriteDog.Name</li>
                 <li><span>Last Place Ate:</span> @Model.FavoriteDog.LastEaten</li>
                 <li><span>Last Time Ate:</span> @Model.FavoriteDog.LastAte</li>
+                <li><span>@{
+                    var i = 0;
+                    while (i < Model.FavoriteDog.Rating)
+                    {
+                        <img src="@Url.Content("~/Content/images/tinyStar.png")" />;
+                        i++;
+                    }
+                }</li>
             </ul>
         </div>
         <div class="col-md-9">
@@ -24,7 +32,7 @@
             <div class="dog-list">
                 <div class="row">
                     <div class="col-md-3">
-                        <h3>Past Hotdogs @Html.ActionLink("Add", "CreateHotdog", "Profile", new { id = Model.Id }, new { @class = "glyphicon glyphicon-pencil" })</h3>
+                        <h3>Previous Dogs @Html.ActionLink("Add", "CreateHotdog", "Profile", new { id = Model.Id }, new { @class = "glyphicon glyphicon-pencil" })</h3>
                     </div>
                 </div>
                 <div class="row">

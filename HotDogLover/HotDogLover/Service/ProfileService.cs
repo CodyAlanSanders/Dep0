@@ -126,8 +126,8 @@ namespace HotDogLover.Service
                 Id = 3,
                 FirstName = "Trevor",
                 LastName = "Philips",
-                Bio = "CEO of Trevor Phillips Industries",
-                ImageUrl = "http://upload.wikimedia.org/wikipedia/en/d/da/Trevor_Philips.Grand_Theft_Auto_V.jpg",
+                Bio = "CEO of Trevor Philips Industries",
+                ImageUrl = "https://41.media.tumblr.com/e3f7c21b78dc3f56cc2a0b5281b983a5/tumblr_mwxr75lYaV1sdpa88o6_250.png",
                 FavoriteDog = hotdogService.Get(3),
                 HotdogList = myFavoriteHotdogs
             };
